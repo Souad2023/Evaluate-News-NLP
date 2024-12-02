@@ -2,15 +2,17 @@ const express = require("express");
 const fetch = require("node-fetch");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
+require('dotenv').config();
 
 
 dotenv.config(); 
 
 const app = express();
 
-
+const apiId = process.env.API_ID;
 const apiKey = process.env.API_KEY;
 
+console.log(apiKey, apiId); 
 
 if (!apiKey) {
     console.error("API_KEY is missing. Please check your .env file.");
