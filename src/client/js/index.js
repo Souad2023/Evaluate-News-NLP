@@ -3,8 +3,6 @@ const fetch = require("node-fetch");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 require('dotenv').config();
-
-
 dotenv.config(); 
 
 const app = express();
